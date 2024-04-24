@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Dmytro Horoshko"]
   spec.email = ["electric.molfar@gmail.com"]
 
-  spec.summary = "..."
-  spec.description = "... ."
+  spec.summary = "Scrape public AWS S3 buckets with ease"
+  spec.description = "Scrape public AWS S3 buckets with ease."
   spec.homepage = "https://github.com/ocvit/s3x"
   spec.license = "MIT"
   spec.metadata = {
