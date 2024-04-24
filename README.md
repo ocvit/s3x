@@ -28,10 +28,14 @@ Initialize a bucket of interest:
 bucket = S3x::Bucket.new("http://ftp.ruby-lang.org/")
 ```
 
-You can set `prefix` to pre-filter items and/or override default `page_size` (1000):
+You can set `prefix` to pre-filter items and/or override default `page_size`:
 
 ```ruby
-bucket = S3x::Bucket.new("http://ftp.ruby-lang.org/", prefix: "pub/ruby/binaries", page_size: 666)
+bucket = S3x::Bucket.new(
+  "http://ftp.ruby-lang.org/",
+  prefix: "pub/ruby/binaries", # default: nil
+  page_size: 666               # default: 1000
+)
 ```
 
 ## Usage
