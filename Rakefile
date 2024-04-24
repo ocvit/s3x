@@ -12,4 +12,13 @@ end
 require "rspec/core/rake_task"
 RSpec::Core::RakeTask.new(:spec)
 
-task default: %i[rubocop rubocop:md spec]
+desc "Run RSpec code examples without VCR cassettes"
+task "spec:no_vcr" do
+  ENV["NO_VCR"] = "1"
+
+  Rake::Task[:spec].invoke
+
+  ENV.delete("NO_VCR")
+end
+
+task default: %i[rubocop rubocop:md spec spec:no_vcr]
