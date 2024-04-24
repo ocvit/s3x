@@ -1,5 +1,9 @@
 # S3x
 
+[![Gem Version](https://badge.fury.io/rb/s3x.svg)](https://badge.fury.io/rb/s3x)
+[![Test](https://github.com/ocvit/s3x/workflows/Test/badge.svg)](https://github.com/ocvit/s3x/actions)
+[![Coverage Status](https://coveralls.io/repos/github/ocvit/s3x/badge.svg?branch=main)](https://coveralls.io/github/ocvit/s3x?branch=main)
+
 Found something spicy? Want to check it out in more detail? Here's a tool for ya 😎
 
 ## Installation
@@ -24,14 +28,10 @@ Initialize a bucket of interest:
 bucket = S3x::Bucket.new("http://ftp.ruby-lang.org/")
 ```
 
-You can set `prefix` to pre-filter items and/or override default `page_size`:
+You can set `prefix` to pre-filter items and/or override default `page_size` (1000):
 
 ```ruby
-bucket = S3x::Bucket.new(
-  "http://ftp.ruby-lang.org/",
-  prefix: "pub/ruby/binaries", # default: nil
-  page_size: 666               # default: 1000
-)
+bucket = S3x::Bucket.new("http://ftp.ruby-lang.org/", prefix: "pub/ruby/binaries", page_size: 666)
 ```
 
 ## Usage
