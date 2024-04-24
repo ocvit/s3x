@@ -33,6 +33,20 @@ jobs:
       run: |
         ./coveralls -p --job-flag=ruby-${{ matrix.ruby }}
 
+  rspec_no_vcr:
+    name: "rspec:no_vcr"
+    needs: rspec
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.3
+        bundler-cache: true
+    - name: Run RSpec without VCR cassettes
+      run: |
+        bundle exec rake spec:no_vcr
+
   coverage:
     needs: rspec
     runs-on: ubuntu-latest
