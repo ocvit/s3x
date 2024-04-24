@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ftp.ruby-lang.org/?list-type=2&max-keys=5&prefix=&start-after=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - ftp.ruby-lang.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1553'
+      X-Amz-Id-2:
+      - RHX4WVtQB5h3pLl2YbK/ENyG+9joepL960UeMfNVrzMyMqx+zM9/I42BKZZDb/k5EVl7CWST9A8=
+      X-Amz-Request-Id:
+      - E6FEQHB67X37W5FW
+      X-Amz-Bucket-Region:
+      - us-east-1
+      Content-Type:
+      - application/xml
+      Server:
+      - AmazonS3
+      Via:
+      - 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 22 Apr 2024 11:56:57 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-iad-kjyo7100169-IAD, cache-hel1410033-HEL
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1713787017.485179,VS0,VE159
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>ftp.r-l.o</Name><Prefix></Prefix><StartAfter></StartAfter><NextContinuationToken>14cU2WjO0BV8/DgWnT/cXzAuYC3+VTw6no1euzsqjuXlYWlIU1ZcE+nYa7tOSnjEJ</NextContinuationToken><KeyCount>5</KeyCount><MaxKeys>5</MaxKeys><IsTruncated>true</IsTruncated><Contents><Key>pub/media/</Key><LastModified>2019-04-20T09:09:12.000Z</LastModified><ETag>&quot;d41d8cd98f00b204e9800998ecf8427e&quot;</ETag><Size>0</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>pub/media/irb-reline-screenshot.png</Key><LastModified>2019-12-21T19:25:35.000Z</LastModified><ETag>&quot;a0dd883ea8bcf34f83169cff28154d2f&quot;</ETag><Size>82674</Size><StorageClass>INTELLIGENT_TIERING</StorageClass></Contents><Contents><Key>pub/media/irb-reline-screenshot3.png</Key><LastModified>2019-12-25T10:27:18.000Z</LastModified><ETag>&quot;a0dd883ea8bcf34f83169cff28154d2f&quot;</ETag><Size>82674</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>pub/media/irb_improved_with_key_take2.mp4</Key><LastModified>2019-05-30T12:12:29.000Z</LastModified><ETag>&quot;bda66c47db5089d3ad92e5a5e849ec38&quot;</ETag><Size>1042227</Size><StorageClass>INTELLIGENT_TIERING</StorageClass></Contents><Contents><Key>pub/media/irb_improved_with_key_take3.mp4</Key><LastModified>2019-12-25T11:36:22.000Z</LastModified><ETag>&quot;52c08c573b727050354bdbee24df0247&quot;</ETag><Size>817954</Size><StorageClass>INTELLIGENT_TIERING</StorageClass></Contents></ListBucketResult>
+  recorded_at: Mon, 22 Apr 2024 11:56:57 GMT
+- request:
+    method: get
+    uri: http://ftp.ruby-lang.org/?list-type=2&max-keys=5&prefix=&start-after=pub/media/irb_improved_with_key_take3.mp4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - ftp.ruby-lang.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1624'
+      X-Amz-Id-2:
+      - 8pC2UNgCHSyqDjrs76wt4VZ8tDh5wYwjiFx1jDxWSxrVta8Zui7bDMK0DOwl6dhVVAKt+XMtz5M=
+      X-Amz-Request-Id:
+      - AJY6FMV9MX1HFEPT
+      X-Amz-Bucket-Region:
+      - us-east-1
+      Content-Type:
+      - application/xml
+      Server:
+      - AmazonS3
+      Via:
+      - 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Date:
+      - Mon, 22 Apr 2024 11:57:05 GMT
+      X-Served-By:
+      - cache-iad-kjyo7100076-IAD, cache-hel1410033-HEL
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1713787025.267538,VS0,VE139
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>ftp.r-l.o</Name><Prefix></Prefix><StartAfter>pub/media/irb_improved_with_key_take3.mp4</StartAfter><NextContinuationToken>1rln62BqO02yUwXDuwII5NPUfxgx78AiPpwbCcB8kDdW2FKd0ksgxbEBanrvCXVUjHFpe8F+8Cts=</NextContinuationToken><KeyCount>5</KeyCount><MaxKeys>5</MaxKeys><IsTruncated>true</IsTruncated><Contents><Key>pub/media/irb_multiline.mp4</Key><LastModified>2019-04-20T09:10:30.000Z</LastModified><ETag>&quot;03fa58ca64375c23cb567be6b129ab11&quot;</ETag><Size>239988</Size><StorageClass>INTELLIGENT_TIERING</StorageClass></Contents><Contents><Key>pub/media/ruby-3.0-irb-highspeed.mp4</Key><LastModified>2020-12-25T04:14:33.000Z</LastModified><ETag>&quot;0a60af2d50a75a1933f6a5fae08f1b4c&quot;</ETag><Size>795670</Size><StorageClass>INTELLIGENT_TIERING</StorageClass></Contents><Contents><Key>pub/media/ruby-3.0-irb-highspeed.png</Key><LastModified>2020-12-25T04:17:30.000Z</LastModified><ETag>&quot;7a7a89f879168433476f7520b13ef2b7&quot;</ETag><Size>183020</Size><StorageClass>INTELLIGENT_TIERING</StorageClass></Contents><Contents><Key>pub/media/ruby310_debug_demo.jpg</Key><LastModified>2021-12-25T08:43:34.000Z</LastModified><ETag>&quot;905cbf0d57d04f2f3b257491db1d2edb&quot;</ETag><Size>124492</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>pub/media/ruby310_debug_demo.mp4</Key><LastModified>2021-12-25T08:20:21.000Z</LastModified><ETag>&quot;fb87043efcb4611f197ec7df08bedd8a&quot;</ETag><Size>2800270</Size><StorageClass>INTELLIGENT_TIERING</StorageClass></Contents></ListBucketResult>
+  recorded_at: Mon, 22 Apr 2024 11:57:05 GMT
+recorded_with: VCR 6.2.0

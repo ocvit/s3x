@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ftp.ruby-lang.org/?list-type=2&max-keys=1000&prefix=xyz&start-after=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - ftp.ruby-lang.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '268'
+      X-Amz-Id-2:
+      - Q9YPDSEx07tF51Moen1d2CcmmD4cNazfsi70ibsaR5cWcUdOGuHQ6lvUzo+Go5iRcDALMQ4kXh4=
+      X-Amz-Request-Id:
+      - RPZNKKYGKQKE8YR3
+      X-Amz-Bucket-Region:
+      - us-east-1
+      Content-Type:
+      - application/xml
+      Server:
+      - AmazonS3
+      Via:
+      - 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Date:
+      - Mon, 22 Apr 2024 12:08:56 GMT
+      X-Served-By:
+      - cache-iad-kjyo7100087-IAD, cache-hel1410031-HEL
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1713787737.645416,VS0,VE137
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>ftp.r-l.o</Name><Prefix>xyz</Prefix><StartAfter></StartAfter><KeyCount>0</KeyCount><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>
+  recorded_at: Mon, 22 Apr 2024 12:08:56 GMT
+recorded_with: VCR 6.2.0
