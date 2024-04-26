@@ -83,6 +83,13 @@ bucket.download("pub/misc/ci_versions/cruby-jruby.json")
 # => "[\"3.1\",\"3.2\",\"3.3\",\"head\",\"jruby\",\"jruby-head\"]\n"
 ```
 
+Return bucket name:
+
+```ruby
+bucket.name
+# => "ftp.r-l.o"
+```
+
 ## Development
 
 ```sh
