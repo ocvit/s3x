@@ -6,6 +6,8 @@
 
 Found something spicy? Here is the tool to check it out 😎
 
+Zero dependencies, no AWS SDK bloat, pure Ruby.
+
 ## Installation
 
 Install the gem and add to Gemfile:
