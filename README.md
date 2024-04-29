@@ -4,7 +4,7 @@
 [![Test](https://github.com/ocvit/s3x/workflows/Test/badge.svg)](https://github.com/ocvit/s3x/actions)
 [![Coverage Status](https://coveralls.io/repos/github/ocvit/s3x/badge.svg?branch=main)](https://coveralls.io/github/ocvit/s3x?branch=main)
 
-Found something spicy? Here is the tool to check it out 😎
+Found something spicy? Want to check it out? Here is the tool for ya 😎
 
 Zero dependencies, no AWS SDK bloat, pure Ruby.
 
